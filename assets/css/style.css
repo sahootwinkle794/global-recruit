@@ -3,7 +3,14 @@
 body {
     font-family: "Poppins", sans-serif;
 }
-
+/* top nav style start  */
+.top-nav{
+    background-color: #020369;
+}
+.top-nav .link-dark{
+    color: white !important;
+}
+/* top nav style end  */
 /* sector style start  */
 .sector {
     text-align: center;
@@ -271,19 +278,23 @@ body {
     font-size: 51.9px;
     font-weight: 600;
 }
-.process{
+
+.process {
     display: flex;
     align-items: center;
     margin-top: 25px;
 }
-.test-text h6{
-     color: #020369;
-     font-weight: 600;
+
+.test-text h6 {
+    color: #020369;
+    font-weight: 600;
 }
-.test-text p{
+
+.test-text p {
     margin: 0px;
     width: 300px;
 }
+
 .circle {
     background-color: #f7951e;
     width: 100px;
@@ -312,11 +323,86 @@ body {
 .circle h5 {
     top: 60%;
 }
-.member-card{
+.member-card {
     border: 1px solid black;
-    padding: 30px;
+    padding: 20px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.profile img {
+    width: 20% !important;
+    margin-right: 10px;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 3px;
+
+}
+.star-img{
+    width: 10% !important;
+}
+.review-btn{
+    background-color: #f7951e;
+    border-color: #f7951e;
+    text-align: center;
+    padding: 15px 25px 15px 25px;
+    font-size: 19.3px;
 }
 /* testimonial style end  */
+/* client style start  */
+.client{
+    padding: 80px;
+}
+.client-con h3{
+    font-size: 16.3px;
+    color: #1752ac;
+}
+.client-con h2{
+    font-size: 47.5px;
+    color: #020369;
+    font-weight: 800;
+}
+.client-con p{
+    font-size: 14.9px;
+}
+/* client style end  */
+/* insight style start  */
+.insights{
+    padding: 80px;
+}
+.insight-box{
+    margin-top: 70px;
+}
+.insight-con h3{
+    font-size: 19px;
+    color: #1752ac;
+}
+.insight-con h2{
+    font-size: 47.2px;
+    color: #020369;
+    font-weight: 800;
+}
+.insight-card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px;
+}
+.insight-card img{
+    border-radius: 20px;
+}
+.insight-card h3{
+    font-size: 19px;
+    color: #1752ac;
+    margin-top: 20px;
+}
+/* insight style end  */
 /* footer style start  */
 .news-row {
     display: flex;
