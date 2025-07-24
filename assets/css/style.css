@@ -210,35 +210,113 @@ body {
 
 /* offer style end  */
 /* find manpower style start  */
-.find-con{
+.find-con {
     background-color: #4778d6;
     color: white;
     padding: 35px;
 }
-.reuire-btn{
+
+.reuire-btn {
     border: 1px solid white;
     color: white;
     padding: 15px 20px 15px 20px;
     font-size: 20.3px;
     position: relative;
 }
-.reuire-btn:hover{
+
+.reuire-btn:hover {
     background-color: white;
     color: #0b389d;
 }
-.find-con h2{
+
+.find-con h2 {
     font-size: 33.3px;
 }
-.require-icon{
+
+.require-icon {
     width: 23px;
     margin-left: 10px;
 }
-.require-icon2{
+
+.require-icon2 {
     width: 23px;
     position: relative;
     right: 14px;
 }
+
 /* find manpower style end  */
+/* testimonial style start  */
+.testimonials {
+    padding: 80px;
+}
+
+.test-con1 h3 {
+    color: #1752ac;
+    font-size: 13.9px;
+}
+
+.test-con1 h2 {
+    color: #020369;
+    font-size: 24.4px;
+    font-weight: 600;
+}
+
+.test-con2 h3 {
+    color: #1752ac;
+    font-size: 17.8px;
+}
+
+.test-con2 h2 {
+    color: #020369;
+    font-size: 51.9px;
+    font-weight: 600;
+}
+.process{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.test-text h6{
+     color: #020369;
+     font-weight: 600;
+}
+.test-text p{
+    margin: 0px;
+    width: 300px;
+}
+.circle {
+    background-color: #f7951e;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.circle h4,
+.circle h5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+.circle h4 {
+    top: 25%;
+}
+
+.circle h5 {
+    top: 60%;
+}
+.member-card{
+    border: 1px solid black;
+    padding: 30px;
+}
+/* testimonial style end  */
 /* footer style start  */
 .news-row {
     display: flex;
@@ -252,12 +330,15 @@ body {
     color: white;
     padding: 30px;
 }
+
 .global-footer h3 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-.ft-logo{
+
+.ft-logo {
     width: 100%;
     margin-bottom: 30px;
 }
+
 /* footer style end  */
