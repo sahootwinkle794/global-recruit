@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Global Recruit Experts</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <section class="top-nav">
         <div class="container-fluid top-nav-con">
             <div class="left-div">
@@ -78,7 +82,7 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark main-nav" aria-label="Third navbar example">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark main-nav sticky-top" aria-label="Third navbar example">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
                 aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +99,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">For
-                            Europe</a>
+                            Europe <i class="fa-solid fa-plus dropdown-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Link 1</a></li>
                             <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -104,7 +108,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">For
-                            GCC & Asia</a>
+                            GCC & Asia <i class="fa-solid fa-plus dropdown-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Link 1</a></li>
                             <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -113,7 +117,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Manpower Types</a>
+                            aria-expanded="false">Manpower Types <i class="fa-solid fa-plus dropdown-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Link 1</a></li>
                             <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -138,64 +142,70 @@
     </nav>
     <section class="sector">
         <div class="container">
-            <h5 class="wow animate__animated animate__fadeInUp">Delivering tailored workforce solutions across diverse industries.</h5>
+            <h5 class="wow animate__animated animate__fadeInUp">Delivering tailored workforce solutions across diverse
+                industries.</h5>
             <h2 class="wow animate__animated animate__fadeInUp">Sectors We Specialize In</h2>
             <div class="row">
-                <div class="sector-owl owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img1.png" alt="card image">
+                <div class="sector-carousel-wrapper">
+                    <button class="sector-prev"><span>&larr;</span></button>
+                    <div class="sector-owl owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img1.png" alt="card image">
+                            </div>
+                            <h4>Construction</h4>
                         </div>
-                        <h4>Construction</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img2.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img2.png" alt="card image">
+                            </div>
+                            <h4>Energy</h4>
                         </div>
-                        <h4>Energy</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img3.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img3.png" alt="card image">
+                            </div>
+                            <h4>Production</h4>
                         </div>
-                        <h4>Production</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img2.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img2.png" alt="card image">
+                            </div>
+                            <h4>Energy</h4>
                         </div>
-                        <h4>Energy</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img1.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img1.png" alt="card image">
+                            </div>
+                            <h4>Construction</h4>
                         </div>
-                        <h4>Construction</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img3.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img3.png" alt="card image">
+                            </div>
+                            <h4>Production</h4>
                         </div>
-                        <h4>Production</h4>
-                    </div>
-                    <div class="item">
-                        <div class="card spector-card">
-                            <img src="assets/images/sp-img2.png" alt="card image">
+                        <div class="item">
+                            <div class="card spector-card">
+                                <img src="assets/images/sp-img2.png" alt="card image">
+                            </div>
+                            <h4>Energy</h4>
                         </div>
-                        <h4>Energy</h4>
-                    </div>
 
+                    </div>
+                    <button class="sector-next"><span>&rarr;</span></button>
                 </div>
-
             </div>
         </div>
     </section>
     <section class="man-power">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="wow animate__animated animate__fadeInUp">Nepal’s Best Manpower Provider: Global Recruit Experts Pvt. Ltd.</h2>
-                    <p class="wow animate__animated animate__fadeInUp">Global Recruit Experts Pvt. Ltd. is one of the best manpower agencies in Nepal, known for its
+            <div class="row man-row">
+                <div class="col-md-5 man-col1">
+                    <h2 class="wow animate__animated animate__fadeInUp">Nepal’s Best Manpower Provider: Global Recruit
+                        Experts Pvt. Ltd.</h2>
+                    <p class="wow animate__animated animate__fadeInUp">Global Recruit Experts Pvt. Ltd. is one of the
+                        best manpower agencies in Nepal, known for its
                         commitment to quality recruitment and ethical practices. Specializing in the supply of
                         unskilled, semi-skilled, and skilled manpower from both Nepal and India, the company has built a
                         strong reputation for reliability, transparency, and timely deployment. Whether it's the Gulf,
@@ -203,7 +213,7 @@
                         thoroughly screened, trained, and matched to the right job—meeting the exact needs of employers
                         while opening doors to better opportunities for workers.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 man-col2">
                     <h3 class="text-end wow animate__animated animate__fadeInUp">Share Your Manpower Needs Here !</h3>
                     <div class="man-power-form">
                         <form>
@@ -255,7 +265,8 @@
         <div class="container">
             <div class="row agency-row">
                 <div class="col-md-8 agency-img-con">
-                    <img src="assets/images/agency-img1.png" alt="agency" class="img-agency img-fluid wow animate__animated animate__fadeInUp">
+                    <img src="assets/images/agency-img1.png" alt="agency"
+                        class="img-agency img-fluid wow animate__animated animate__fadeInUp">
                     <div class="year-box wow animate__animated animate__fadeInUp">
                         <h2>20+</h2>
                         <h3>Years of
@@ -264,9 +275,12 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="wow animate__animated animate__fadeInUp">Welcome to Global Recruit Experts Pvt. Ltd !</h3>
-                    <h2 class="wow animate__animated animate__fadeInUp">Looking for the best Manpower Recruitment Agency in Nepal ?</h2>
-                    <p class="wow animate__animated animate__fadeInUp">Global Recruit Experts Pvt. Ltd. stands out as a trusted and professional partner, providing
+                    <h3 class="wow animate__animated animate__fadeInUp">Welcome to Global Recruit Experts Pvt. Ltd !
+                    </h3>
+                    <h2 class="wow animate__animated animate__fadeInUp">Looking for the best Manpower Recruitment Agency
+                        in Nepal ?</h2>
+                    <p class="wow animate__animated animate__fadeInUp">Global Recruit Experts Pvt. Ltd. stands out as a
+                        trusted and professional partner, providing
                         skilled, semi-skilled, and unskilled manpower from both Nepal and India. With a strong network,
                         transparent process, and commitment to quality, the company ensures reliable staffing solutions
                         for employers worldwide.</p>
@@ -293,8 +307,10 @@
     <section class="offer">
         <div class="container">
             <h3 class="wow animate__animated animate__fadeInUp">What we offer for our customers</h3>
-            <h2 class="wow animate__animated animate__fadeInUp">Top-Quality Manpower Recruitment from Nepal – Trusted by Employers Worldwide</h2>
-            <p class="wow animate__animated animate__fadeInUp">We provide comprehensive manpower recruitment services, offering unskilled, semi-skilled, and skilled
+            <h2 class="wow animate__animated animate__fadeInUp">Top-Quality Manpower Recruitment from Nepal – Trusted by
+                Employers Worldwide</h2>
+            <p class="wow animate__animated animate__fadeInUp">We provide comprehensive manpower recruitment services,
+                offering unskilled, semi-skilled, and skilled
                 workers from Nepal and India. Whether you need laborers, technicians, or professionals, our agency
                 ensures reliable, well-screened candidates tailored to meet your workforce needs.</p>
             <div class="skill-con">
@@ -318,7 +334,8 @@
             <div class="row">
                 <div class="col-md-6 test-con1">
                     <h3 class="wow animate__animated animate__fadeInUp">Our Recruitment Process</h3>
-                    <h2 class="wow animate__animated animate__fadeInUp">We Make Your<br>Recruitment Process Simple & Easy</h2>
+                    <h2 class="wow animate__animated animate__fadeInUp">We Make Your<br>Recruitment Process Simple &
+                        Easy</h2>
                     <div class="process">
                         <div class="circle wow animate__animated animate__fadeInUp">
                             <h4>Step</h4>
@@ -336,7 +353,8 @@
                         </div>
                         <div class="test-text">
                             <h6 class="wow animate__animated animate__fadeInUp">Interview & Selection</h6>
-                            <p class="wow animate__animated animate__fadeInUp">We conduct interviews and select the best manpower to match your needs.</p>
+                            <p class="wow animate__animated animate__fadeInUp">We conduct interviews and select the best
+                                manpower to match your needs.</p>
                         </div>
                     </div>
                     <div class="process">
@@ -346,7 +364,8 @@
                         </div>
                         <div class="test-text">
                             <h6 class="wow animate__animated animate__fadeInUp">Processing & Dispatch</h6>
-                            <p class="wow animate__animated animate__fadeInUp">We manage everything from documentation to visa processing and deployment.</p>
+                            <p class="wow animate__animated animate__fadeInUp">We manage everything from documentation
+                                to visa processing and deployment.</p>
                         </div>
                     </div>
                 </div>
@@ -354,75 +373,228 @@
                     <h3 class="wow animate__animated animate__fadeInUp">Feedback That Speaks</h3>
                     <h2 class="wow animate__animated animate__fadeInUp">Testimonials</h2>
                     <div class="row">
-                        <div class="testimonials-owl owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="member">
-                                    <div class="card member-card">
-                                        <div class="profile">
-                                            <img src="assets/images/team-1.png" alt="team-1">
-                                            <h4>XXXX XXX XXX</h4>
-                                        </div>
-                                        <div class="star">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                        </div>
-                                        <div class="comments">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
-                                                quibusdam eum, quis at dicta neque illum earum perspiciatis eligendi,
-                                                praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="member">
-                                    <div class="card member-card">
-                                        <div class="profile">
-                                            <img src="assets/images/team-1.png" alt="team-1">
-                                            <h4>XXXX XXX XXX</h4>
-                                        </div>
-                                        <div class="star">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                        </div>
-                                        <div class="comments">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
-                                                quibusdam eum, quis at dicta neque illum earum perspiciatis eligendi,
-                                                praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?</p>
+                        <div class="testimonial-carousel-wrapper">
+                            <button class="test-prev"><span>&larr;</span></button>
+                            <div class="testimonials-owl owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="member">
-                                    <div class="card member-card">
-                                        <div class="profile">
-                                            <img src="assets/images/team-1.png" alt="team-1">
-                                            <h4>XXXX XXX XXX</h4>
-                                        </div>
-                                        <div class="star">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                            <img src="assets/images/star.png" alt="star" class="star-img">
-                                        </div>
-                                        <div class="comments">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
-                                                quibusdam eum, quis at dicta neque illum earum perspiciatis eligendi,
-                                                praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?</p>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="member">
+                                        <div class="card member-card">
+                                            <div class="profile">
+                                                <img src="assets/images/team-1.png" alt="team-1">
+                                                <h4>XXXX XXX XXX</h4>
+                                            </div>
+                                            <div class="star">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                                <img src="assets/images/star.png" alt="star" class="star-img">
+                                            </div>
+                                            <div class="comments">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis
+                                                    quibusdam eum, quis at dicta neque illum earum perspiciatis
+                                                    eligendi,
+                                                    praesentium ipsum rem culpa delectus vero nulla nihil fugiat quia?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-
+                            </div>
+                            <button class="test-next"><span>&rarr;</span></button>
                         </div>
                     </div>
                     <a href="#" type="submit" class="btn btn-primary review-btn">Write a review</a>
@@ -433,33 +605,68 @@
     </section>
     <section class="client">
         <div class="container">
-            <div class="row">
+            <div class="row client-row">
                 <div class="col-md-6 client-con">
                     <h3 class="wow animate__animated animate__fadeInUp">Our Valuable Clients</h3>
                     <h2 class="wow animate__animated animate__fadeInUp">We’ve 1000+<br>
                         Global Premium<br>
                         Clients</h2>
-                    <p class="wow animate__animated animate__fadeInUp">We take pride and satisfaction in having successfully served thousands of our esteemed clients
+                    <p class="wow animate__animated animate__fadeInUp">We take pride and satisfaction in having
+                        successfully served thousands of our esteemed clients
                         across the globe.</p>
                     <a href="#" type="submit" class="btn btn-primary learn-btn">Connect with Us <img
                             src="assets/images/arr.png" alt="arrow" class="arrow-icon"></a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 client-logo">
                     <div class="row">
-                        <div class="client-owl owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="card client-card">
-                                    <img src="assets/images/client.png" alt="client">
+                        <div class="client-carousel-wrapper">
+                            <button class="client-prev"><span>&larr;</span></button>
+                            <button class="client-next"><span>&rarr;</span></button>
+                            <div class="client-owl owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="card client-card">
-                                    <img src="assets/images/client2.png" alt="client">
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client2.png" alt="client">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="card client-card">
-                                    <img src="assets/images/client.png" alt="client">
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client2.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client2.png" alt="client">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card client-card">
+                                        <img src="assets/images/client.png" alt="client">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -478,13 +685,18 @@
             <div class="row insight-row">
                 <div class="col-md-3">
                     <div class="card insight-card">
-                        <img src="assets/images/insight1.png" alt="insight" class="insight-img">
+                        <div class="insight-img-card">
+                            <img src="assets/images/insight1.png" alt="insight" class="insight-img">
+                        </div>
+
                         <div class="date-div">
                             <img src="assets/images/calendar.png" alt="calender" class="date-icon">
                             <span>July 9, 2025</span>
                         </div>
-                        <h3 class="wow animate__animated animate__fadeInUp">WHY PARENTING WITH THE RIGHT INTERNATIONAL RECRUITMENT AGENCY MATTERS</h3>
-                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia ex dolorem quidem,
+                        <h3 class="wow animate__animated animate__fadeInUp">WHY PARENTING WITH THE RIGHT INTERNATIONAL
+                            RECRUITMENT AGENCY MATTERS</h3>
+                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Animi mollitia ex dolorem quidem,
                             amet saepe ducimus aliquam ea vero, incidunt, nihil ut adipisci similique aut ad debitis
                             reiciendis</P>
                         <a href="#" class="read-btn">Read more <img src="assets/images/right-arrow.png" alt="arrow"
@@ -494,13 +706,17 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card insight-card">
-                        <img src="assets/images/insight2.png" alt="insight" class="insight-img">
+                        <div class="insight-img-card">
+                            <img src="assets/images/insight2.png" alt="insight" class="insight-img">
+                        </div>
                         <div class="date-div">
                             <img src="assets/images/calendar.png" alt="calender" class="date-icon">
                             <span>July 9, 2025</span>
                         </div>
-                        <h3 class="wow animate__animated animate__fadeInUp">WHY GLOBAL RECRUIT EXPERTS PVT. LTD. IS A TOP RECRUITMENT AGENCY FOR GULF AND EUROPE</h3>
-                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia ex dolorem quidem,
+                        <h3 class="wow animate__animated animate__fadeInUp">WHY GLOBAL RECRUIT EXPERTS PVT. LTD. IS A
+                            TOP RECRUITMENT AGENCY FOR GULF AND EUROPE</h3>
+                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Animi mollitia ex dolorem quidem,
                             amet saepe ducimus aliquam ea vero, incidunt, nihil ut adipisci similique aut ad debitis
                             reiciendis</P>
                         <a href="#" class="read-btn">Read more <img src="assets/images/right-arrow.png" alt="arrow"
@@ -510,14 +726,18 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card insight-card">
-                        <img src="assets/images/insight3.png" alt="insight" class="insight-img">
+                        <div class="insight-img-card">
+                            <img src="assets/images/insight3.png" alt="insight" class="insight-img">
+                        </div>
                         <div class="date-div">
                             <img src="assets/images/calendar.png" alt="calender" class="date-icon">
                             <span>July 9, 2025</span>
                         </div>
-                        <h3 class="wow animate__animated animate__fadeInUp">WHY NEPAL AND INDIA ARE THE BEST SOURCES FOR SKILLED,SEMI-SKILLED AND UNSKILLED MANPOWER
+                        <h3 class="wow animate__animated animate__fadeInUp">WHY NEPAL AND INDIA ARE THE BEST SOURCES FOR
+                            SKILLED,SEMI-SKILLED AND UNSKILLED MANPOWER
                         </h3>
-                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia ex dolorem quidem,
+                        <P class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Animi mollitia ex dolorem quidem,
                             amet saepe ducimus aliquam ea vero, incidunt, nihil ut adipisci similique aut ad debitis
                             reiciendis</P>
                         <a href="#" class="read-btn">Read more <img src="assets/images/right-arrow.png" alt="arrow"
@@ -528,13 +748,13 @@
             </div>
         </div>
     </section>
-    <section class="find-manPower">
-        <div class="container find-con">
-            <div class="row">
-                <div class="col-md-8">
+    <section class="find-manPower find-con">
+        <div class="container-fluid">
+            <div class="find-row">
+                <div class="find-col1">
                     <h2 class="wow animate__animated animate__fadeInUp">Find the Right Manpower with Us.</h2>
                 </div>
-                <div class="col-md-4">
+                <div class="find-col2">
                     <a href="#" class="btn reuire-btn">Send us your requirements
                         <img src="assets/images/fwd-btn.png" alt="required btn" class="require-icon">
                         <img src="assets/images/fwd-btn2.png" alt="required btn" class="require-icon2"></a>
@@ -643,89 +863,145 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script>
-        $('.sector-owl').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
+        $(document).ready(function () {
+            var owl = $('.sector-owl').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                smartSpeed: 600,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
                 }
-            }
+            });
+
+            $('.sector-prev').click(function () {
+                owl.trigger('prev.owl.carousel', [600]);
+            });
+
+            $('.sector-next').click(function () {
+                owl.trigger('next.owl.carousel', [600]);
+            });
+
+            $('.sector-prev, .sector-next').hover(
+                function () {
+                    owl.trigger('stop.owl.autoplay');
+                },
+                function () {
+                    owl.trigger('play.owl.autoplay', [2000]);
+                }
+            );
         });
     </script>
     <script>
-        $('.testimonials-owl').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 2
+        $(document).ready(function () {
+            const testimonialOwl = $('.testimonials-owl').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                smartSpeed: 600,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 3 },
+                    1000: { items: 2 }
                 }
-            }
+            });
+
+            // Controller click
+            $('.test-prev').click(function () {
+                testimonialOwl.trigger('prev.owl.carousel', [600]);
+            });
+
+            $('.test-next').click(function () {
+                testimonialOwl.trigger('next.owl.carousel', [600]);
+            });
+
+            // Pause autoplay on hover over controller
+            $('.test-prev, .test-next').hover(
+                function () {
+                    testimonialOwl.trigger('stop.owl.autoplay');
+                },
+                function () {
+                    testimonialOwl.trigger('play.owl.autoplay', [2000]);
+                }
+            );
         });
     </script>
     <script>
-        $('.client-owl').owlCarousel({
-            loop: true,
+        var owl = $('.client-owl').owlCarousel({
+            loop: false,
             margin: 10,
             nav: false,
             autoplay: true,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
+            smartSpeed: 600,
             responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 2
-                }
+                0: { items: 1 },
+                600: { items: 2 },
+                1000: { items: 2 }
             }
         });
+        $('.client-prev').click(function () {
+            owl.trigger('prev.owl.carousel', [600]);
+        });
+
+        $('.client-next').click(function () {
+            owl.trigger('next.owl.carousel', [600]);
+        });
+        $('.client-prev, .client-next').hover(
+            function () {
+                owl.trigger('stop.owl.autoplay');
+            },
+            function () {
+                owl.trigger('play.owl.autoplay', [2000]);
+            }
+        );
     </script>
     <script>
         new WOW().init();
     </script>
     <script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate__fadeInUp');
-      }
-    });
-  });
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__fadeInUp');
+                }
+            });
+        });
 
-  document.querySelectorAll('.box').forEach(box => {
-    observer.observe(box);
-  });
-</script>
+        document.querySelectorAll('.box').forEach(box => {
+            observer.observe(box);
+        });
+    </script>
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 
 </body>
 
