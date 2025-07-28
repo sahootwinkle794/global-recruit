@@ -1048,6 +1048,51 @@ a.consult-btn {
 }
 
 /* insight style end  */
+/* page2 partner style start  */
+.partner-img {
+    border-radius: 50px;
+    overflow: hidden; /* Ensures image doesn’t overflow the rounded corners */
+    position: relative;
+}
+
+.partner-img img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.partner-img:hover img {
+    transform: scale(1.1); /* Zoom effect */
+}
+.partner-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partner-box {
+    background: linear-gradient(to bottom, #000000, #0b389d);
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 80%;
+}
+
+.partner-box h2 {
+    color: white;
+    font-size: 70.2px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.partner-box h3 {
+    color: white;
+    font-size: 18.8px;
+}
+/* page2 partner style end  */
 /* footer style start  */
 .news-col img {
     transition: all 0.4s ease;
