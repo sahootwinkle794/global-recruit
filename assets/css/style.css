@@ -215,21 +215,19 @@ h2 {
     transition: transform 0.3s ease, content 0.3s ease;
     vertical-align: middle;
 }
+
 .navbar-nav .dropdown:hover .dropdown-icon::before {
     content: "\f068";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
-.sticky-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 1030; 
-    background-color: white; 
-}
+
 .main-nav.sticky-top {
-    top: calc(60px + 80px); 
-    z-index: 1020;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+    /* Ensure it stays above other elements */
 }
+
 .main-nav {
     background: linear-gradient(to right,
             #000000 0%,
@@ -237,6 +235,7 @@ h2 {
             #001544 100%);
     padding: 7px 0px;
 }
+
 .consult-btn {
     position: relative;
     display: inline-block;
@@ -246,29 +245,37 @@ h2 {
     cursor: pointer;
 
 }
+
 .consult-btn:hover {
     background: linear-gradient(120deg, #f68b1e, #fca751);
     transition: all 0.4s ease;
 }
+
 a.nav-link {
     color: white;
     font-size: 15px;
 }
+
 a.nav-link.active {
     color: #f68b1e !important;
     font-weight: 600;
 }
+
 ul.navbar-nav.me-auto.mb-2.mb-sm-0 {
     gap: 20px;
 }
+
 .consult-btn:hover {
     color: white;
 }
+
+
 a.consult-btn {
     text-decoration: none;
     color: #1752ac;
     font-size: 14.1px;
 }
+
 .arr-icon {
     width: 20px;
     margin-left: 10px;
@@ -1048,51 +1055,6 @@ a.consult-btn {
 }
 
 /* insight style end  */
-/* page2 partner style start  */
-.partner-img {
-    border-radius: 50px;
-    overflow: hidden; /* Ensures image doesn’t overflow the rounded corners */
-    position: relative;
-}
-
-.partner-img img {
-    transition: transform 0.5s ease;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.partner-img:hover img {
-    transform: scale(1.1); /* Zoom effect */
-}
-.partner-row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.partner-box {
-    background: linear-gradient(to bottom, #000000, #0b389d);
-    padding: 20px;
-    border-radius: 20px;
-    width: 30%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 80%;
-}
-
-.partner-box h2 {
-    color: white;
-    font-size: 70.2px;
-    font-weight: 600;
-    margin: 0px;
-}
-
-.partner-box h3 {
-    color: white;
-    font-size: 18.8px;
-}
-/* page2 partner style end  */
 /* footer style start  */
 .news-col img {
     transition: all 0.4s ease;
