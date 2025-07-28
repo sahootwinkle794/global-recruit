@@ -65,6 +65,18 @@ h2 {
 
 /* float button style end  */
 /* top nav style start  */
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Higher than default navbar */
+    background-color: white; /* Or your preferred background */
+}
+
+.main-nav.sticky-top {
+    top: calc(60px + 80px); /* Adjust based on combined height of top-nav and mid-nav */
+    z-index: 1020;
+}
+
 .top-nav {
     background-color: #020369;
 }
