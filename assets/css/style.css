@@ -68,12 +68,15 @@ h2 {
 .sticky-wrapper {
     position: sticky;
     top: 0;
-    z-index: 1030; /* Higher than default navbar */
-    background-color: white; /* Or your preferred background */
+    z-index: 1030;
+    /* Higher than default navbar */
+    background-color: white;
+    /* Or your preferred background */
 }
 
 .main-nav.sticky-top {
-    top: calc(60px + 80px); /* Adjust based on combined height of top-nav and mid-nav */
+    top: calc(60px + 80px);
+    /* Adjust based on combined height of top-nav and mid-nav */
     z-index: 1020;
 }
 
@@ -1067,6 +1070,66 @@ a.consult-btn {
 }
 
 /* insight style end  */
+/* page2 partner style start  */
+.partner-con-img {
+    border-radius: 22px;
+    /* Rounded corners for the container */
+    overflow: hidden;
+    /* Ensures image doesn't overflow the container */
+    display: inline-block;
+}
+
+.partner-con-img img {
+    transition: transform 0.4s ease-in-out;
+    /* Smooth transition for zoom */
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* Match container radius */
+
+}
+
+.partner-con-img img:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.partner-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner-con {
+    position: relative;
+    margin-top: 66px;
+}
+
+.partner-box {
+    background: linear-gradient(to bottom, #000000, #0b389d);
+    padding: 20px;
+    border-radius: 20px;
+    width: 25%;
+    position: absolute;
+    top: -43px;
+    right: 0;
+    left: 79%;
+}
+
+.partner-box h2 {
+    color: white;
+    font-size: 70.2px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.partner-box h3 {
+    color: white;
+    font-size: 18.8px;
+}
+
+/* page2 partnerstyle end  */
 /* footer style start  */
 .news-col img {
     transition: all 0.4s ease;
