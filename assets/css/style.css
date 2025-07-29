@@ -1167,23 +1167,48 @@ a.consult-btn {
 /* client logo style end  */
 /* page2 partnerstyle end  */
 /* license page style start  */
-.license{
+.license {
     padding: 40px;
 }
+
 .license h2 {
     color: #020369;
     font-size: 46.3px;
     font-weight: 600;
     text-align: center;
 }
-.license-img{
+
+.license-img {
     text-align: center;
 }
+
 /* license page style end  */
 /* country details page start  */
-.country-details{
-    padding: 40px;  
+.partner-con {
+    position: relative;
 }
+
+.round {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    z-index: 9999;
+}
+
+.country-box {
+    background: linear-gradient(to bottom, #000000, #0b389d);
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    position: absolute;
+    top: 74%;
+    left: -5%;
+}
+
+.country-details {
+    padding: 40px;
+}
+
 .offer-details h2 {
     font-size: 24.8px;
     color: #020369;
@@ -1194,34 +1219,75 @@ a.consult-btn {
     font-size: 22.8px;
     color: #1752ac;
 }
+
+.cus {
+    background: rgb(238, 245, 255);
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cus h3 {
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cus p {
+    color: #757578;
+    text-align: center;
+}
+
 /* country details page end  */
 /* contact page style start  */
-.contact{
+.con-social-div{
+    background-color: #020369;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-form h5 {
+    margin-top: 30px;
+}
+.contact-form p{
+    color: #002780;
+}
+.contact {
     padding: 40px;
 }
+
 .contact h2 {
     color: #020369;
     font-size: 46.3px;
     font-weight: 600;
     text-align: center;
 }
-.social-card{
-    background: linear-gradient(to top, #ff3131,#ff914d);
+
+.social-card {
+    background: linear-gradient(to top, #ff3131, #ff914d);
     padding: 50px 0px;
     border-radius: 20px;
     color: white;
     text-align: center;
 }
-.social-img img{
+
+.social-img img {
     width: 30%;
 }
-.social-card h3{
+
+.social-card h3 {
     margin-top: 20px;
 }
+
 .contact-form h5 {
     color: #1752ac;
     font-size: 16.3px;
 }
+
 /* contact page style end  */
 /* footer style start  */
 .news-col img {
