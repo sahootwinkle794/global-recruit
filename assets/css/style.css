@@ -1129,6 +1129,42 @@ a.consult-btn {
     font-size: 18.8px;
 }
 
+.about-client-row {
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+
+/* client logo style start  */
+.about-client .client-card {
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.client-card {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+}
+
+.row .col:nth-child(1) .client-card {
+    border-top-left-radius: 25px;
+}
+
+.row .col:nth-child(2) .client-card {
+    border-top-right-radius: 25px;
+}
+
+.row .col:nth-last-child(1) .client-card {
+    border-bottom-right-radius: 25px;
+}
+
+.row .col:nth-last-child(2) .client-card {
+    border-bottom-left-radius: 25px;
+}
+
+/* client logo style end  */
 /* page2 partnerstyle end  */
 /* footer style start  */
 .news-col img {
