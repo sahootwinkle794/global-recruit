@@ -1180,6 +1180,21 @@ a.consult-btn {
     text-align: center;
 }
 /* license page style end  */
+/* country details page start  */
+.country-details{
+    padding: 40px;  
+}
+.offer-details h2 {
+    font-size: 24.8px;
+    color: #020369;
+    font-weight: 600;
+}
+
+.offer-details h3 {
+    font-size: 22.8px;
+    color: #1752ac;
+}
+/* country details page end  */
 /* contact page style start  */
 .contact{
     padding: 40px;
