@@ -925,12 +925,10 @@ a.consult-btn {
     padding: 20px;
     transition: background 0.5s ease-in-out, box-shadow 0.5s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* overflow: hidden; */
     position: relative;
     z-index: 1;
 }
 
-/* Animated gradient overlay */
 .insight-card::before {
     content: "";
     position: absolute;
@@ -968,7 +966,7 @@ a.consult-btn {
 }
 
 /* Optional: make text color change smoothly */
-.insight-card * {
+.insight-card {
     transition: color 0.5s ease;
 }
 
@@ -1212,16 +1210,19 @@ a.consult-btn {
     top: -23%;
     left: 35%;
 }
+
 .img-det6 {
     position: relative;
     top: -26%;
     left: 0;
 }
+
 .img-det7 {
     position: relative;
     top: -28%;
     left: 60%;
 }
+
 .partner-con {
     position: relative;
 }
@@ -1331,42 +1332,171 @@ a.consult-btn {
 
 /* contact page style end  */
 /* career page style start  */
-.apply{
+.apply {
     padding: 40px;
 }
-.career-card{
+
+.career-card {
     margin-bottom: 30px;
 }
-.apply-btn{
+
+.apply-btn {
     background-color: #0fb0ff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
     color: white;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #3015b3, #10015e, #0b74dc, #070cb2);
+  background-size: 300% 300%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 /* career page style end  */
 /* blog page style start  */
+.blog-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: none !important;
+    padding: 0px;
+    transition: background 0.5s ease-in-out, box-shadow 0.5s ease;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    z-index: 1;
+}
 
+
+.blog-card:hover::before {
+    opacity: 1;
+}
+
+.pro-img {
+    width: 15%;
+}
+
+.blog-card {
+    transition: color 0.5s ease;
+}
+
+.blog {
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(240, 240, 240, 0.368);
+}
+
+.expert span {
+    font-size: 13px;
+}
+
+.blog-read {
+    color: #0056b3;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+}
+
+.blog-box {
+    margin-top: 20px;
+}
+
+.blog-con h3 {
+    font-size: 19px;
+    color: #1752ac;
+}
+
+.blog-con h2 {
+    font-size: 25px;
+    color: #020369;
+    font-weight: 800;
+}
+
+.blog-card p {
+    font-size: 12px;
+}
+
+.blog-img-card {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.blog-img-card:hover .blog-img {
+    transform: scale(1.1);
+}
+
+.blog-card h3 {
+    font-size: 15px;
+    color: #1752ac;
+    margin-top: 20px;
+}
+
+.blog-row {
+    text-align: start;
+}
+
+.blog {
+    padding: 40px;
+    text-align: center;
+}
+
+.blog h5 {
+    color: #1752ac;
+    font-size: 16.3px;
+}
+
+.blog h2 {
+    color: #020369;
+    font-size: 46.3px;
+    font-weight: 600;
+}
 
 /* blog page style end  */
 /* blog-detals page style start  */
-.blog-details{
+.blog-details {
     padding: 40px;
+    box-shadow: 0 6px 12px rgba(240, 240, 240, 0.368);
 }
+
 .blog-details h2 {
     color: #020369;
     font-size: 45px;
     text-align: center;
     font-weight: 600;
 }
-.blog-img{
+
+.blog-img {
     width: 100%;
+    margin-bottom: 20px;
 }
-.blog-details h6{
+
+.blog-details h6 {
     color: black;
     font-weight: 600;
+}
+.blog-read:hover{
+    color: orange;
 }
 /* blog-details page style end  */
 /* footer style start  */
