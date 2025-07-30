@@ -1187,15 +1187,45 @@ a.consult-btn {
 .image-details {
     position: relative;
 }
+
 .img-det2 {
     position: relative;
-    top: -4%;
+    top: -6%;
     left: 16%;
     z-index: -1;
+}
+
+.img-det3 {
+    position: relative;
+    top: -10%;
+    left: 35%;
+}
+
+.img-det4 {
+    position: relative;
+    top: -20%;
+    left: 0;
+}
+
+.img-det5 {
+    position: relative;
+    top: -23%;
+    left: 35%;
+}
+.img-det6 {
+    position: relative;
+    top: -26%;
+    left: 0;
+}
+.img-det7 {
+    position: relative;
+    top: -28%;
+    left: 60%;
 }
 .partner-con {
     position: relative;
 }
+
 .round {
     position: absolute;
     top: -10%;
@@ -1300,6 +1330,45 @@ a.consult-btn {
 }
 
 /* contact page style end  */
+/* career page style start  */
+.apply{
+    padding: 40px;
+}
+.career-card{
+    margin-bottom: 30px;
+}
+.apply-btn{
+    background-color: #0fb0ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+/* career page style end  */
+/* blog page style start  */
+
+
+/* blog page style end  */
+/* blog-detals page style start  */
+.blog-details{
+    padding: 40px;
+}
+.blog-details h2 {
+    color: #020369;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+.blog-img{
+    width: 100%;
+}
+.blog-details h6{
+    color: black;
+    font-weight: 600;
+}
+/* blog-details page style end  */
 /* footer style start  */
 .news-col img {
     transition: all 0.4s ease;
