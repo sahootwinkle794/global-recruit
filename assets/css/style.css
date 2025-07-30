@@ -1184,10 +1184,18 @@ a.consult-btn {
 
 /* license page style end  */
 /* country details page start  */
+.image-details {
+    position: relative;
+}
+.img-det2 {
+    position: relative;
+    top: -4%;
+    left: 16%;
+    z-index: -1;
+}
 .partner-con {
     position: relative;
 }
-
 .round {
     position: absolute;
     top: -10%;
@@ -1241,7 +1249,7 @@ a.consult-btn {
 
 /* country details page end  */
 /* contact page style start  */
-.con-social-div{
+.con-social-div {
     background-color: #020369;
     display: flex;
     align-items: center;
@@ -1250,12 +1258,15 @@ a.consult-btn {
     padding: 10px;
     border-radius: 10px;
 }
+
 .contact-form h5 {
     margin-top: 30px;
 }
-.contact-form p{
+
+.contact-form p {
     color: #002780;
 }
+
 .contact {
     padding: 40px;
 }
