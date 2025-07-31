@@ -69,14 +69,11 @@ h2 {
     position: sticky;
     top: 0;
     z-index: 1030;
-    /* Higher than default navbar */
     background-color: white;
-    /* Or your preferred background */
 }
 
 .main-nav.sticky-top {
     top: calc(60px + 80px);
-    /* Adjust based on combined height of top-nav and mid-nav */
     z-index: 1020;
 }
 
@@ -1192,35 +1189,29 @@ a.consult-btn {
     left: 16%;
     z-index: -1;
 }
-
 .img-det3 {
-    position: relative;
-    top: -10%;
-    left: 35%;
+    margin-top: -30%;
+    margin-left: 35%;
 }
 
 .img-det4 {
-    position: relative;
-    top: -20%;
-    left: 0;
+    margin-top: -30%;
+    margin-left: 0;
 }
 
 .img-det5 {
-    position: relative;
-    top: -23%;
-    left: 35%;
+    margin-top: -10%;
+    margin-left: 35%;
 }
 
 .img-det6 {
-    position: relative;
-    top: -26%;
-    left: 0;
+    margin-top: -10%;
+    margin-left: 0;
 }
 
 .img-det7 {
-    position: relative;
-    top: -28%;
-    left: 60%;
+    margin-top: -10%;
+    margin-left: 70%;
 }
 
 .partner-con {
@@ -1231,7 +1222,7 @@ a.consult-btn {
     position: absolute;
     top: -10%;
     right: -10%;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .country-box {
@@ -1246,6 +1237,10 @@ a.consult-btn {
 
 .country-details {
     padding: 40px;
+}
+button.accordion-button {
+    color: #020369 !important;
+    font-size: 20px;
 }
 
 .offer-details h2 {
@@ -1353,18 +1348,26 @@ a.consult-btn {
 }
 
 .apply-btn:hover {
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  background: linear-gradient(45deg, #3015b3, #10015e, #0b74dc, #070cb2);
-  background-size: 300% 300%;
-  animation: gradient 5s ease infinite;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #3015b3, #10015e, #0b74dc, #070cb2);
+    background-size: 300% 300%;
+    animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* career page style end  */
@@ -1495,9 +1498,11 @@ a.consult-btn {
     color: black;
     font-weight: 600;
 }
-.blog-read:hover{
+
+.blog-read:hover {
     color: orange;
 }
+
 /* blog-details page style end  */
 /* footer style start  */
 .news-col img {
@@ -1514,8 +1519,8 @@ a.consult-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
     margin-bottom: 25px;
+    width: 89%;
 }
 
 .global-footer {
@@ -1582,7 +1587,7 @@ a.consult-btn {
 .input-form {
     background-color: white;
     padding: 10px 23px;
-    width: 25%;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
