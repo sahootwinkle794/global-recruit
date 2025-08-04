@@ -283,57 +283,75 @@
         top: 60%;
         left: -5%;
     }
-    .round{
+
+    .round {
         width: 30%;
     }
-    .cus{
+
+    .cus {
         width: 100%;
     }
+
     .contact h2 {
         font-size: 29.3px;
     }
+
     .social-card {
         margin-bottom: 20px;
     }
-    .con-social-div{
+
+    .con-social-div {
         width: 100%;
         margin-bottom: 20px;
     }
-    .apply-btn{
+
+    .apply-btn {
         font-size: 10px;
         margin-bottom: 20px;
     }
-    .career-card{
+
+    .career-card {
         margin-bottom: 10px;
     }
+
     .blog h2 {
         color: #020369;
         font-size: 24.3px;
         font-weight: 600;
     }
+
     .blog-con h3 {
         font-size: 11px;
         color: #1752ac;
     }
+
     .blog-details h2 {
         color: #020369;
         font-size: 13px;
         text-align: center;
         font-weight: 600;
     }
-    .blog-details p{
+
+    .blog-details p {
         font-size: 10px;
     }
-    .blog-details ul{
+
+    .blog-details ul {
         font-size: 10px;
     }
-    .blog-details h6{
+
+    .blog-details h6 {
         font-size: 11px;
     }
+
     .license h2 {
         color: #020369;
         font-size: 31.3px;
         font-weight: 600;
         text-align: center;
+    }
+
+    button.navbar-toggler {
+        margin-left: auto;
     }
 }
