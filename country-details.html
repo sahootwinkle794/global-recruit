@@ -19,8 +19,7 @@
     <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <div class="sticky-wrapper">
-        <section class="top-nav">
+    <section class="top-nav">
             <div class="container-fluid top-nav-con">
                 <div class="left-div">
                     <div class="call-div">
@@ -49,6 +48,8 @@
                 </ul>
             </div>
         </section>
+    <div class="sticky-wrapper">
+        
         <header class="mid-nav">
             <div class="container-fluid mid-nav-con">
                 <a href="index.html" class="logo">
@@ -188,6 +189,93 @@
                 </div>
             </div>
         </nav>
+        <!-- Mobile Sidebar Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-header">
+                <span class="close-btn"><i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#">For Europe <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="country.html">Romania</a></li>
+                        <li><a href="#">Serbia</a></li>
+                        <li><a href="#">Croatia</a></li>
+                        <li><a href="#">Bosnia and Herzegovina</a></li>
+                        <li><a href="#">North Macedonia</a></li>
+                        <li><a href="#">Bulgaria</a></li>
+                        <li><a href="#">Slovakia</a></li>
+                        <li><a href="#">Albania</a></li>
+                        <li><a href="#">Slovenia</a></li>
+                        <li><a href="#">Moldova</a></li>
+                        <li><a href="#">Cyprus</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">For
+                        GCC & Asia <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">UAE</a></li>
+                        <li><a href="#">KSA</a></li>
+                        <li><a href="#">Qatar</a></li>
+                        <li><a href="#">Oman</a></li>
+                        <li><a href="#">Baharain</a></li>
+                        <li><a href="#">Kuwait</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">Industries <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Production</a></li>
+                        <li><a href="#">Agriculture & Food</a></li>
+                        <li><a href="#">Energy</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Marine & Ship Building</a></li>
+                        <li><a href="#">Facility Management Services</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">FMCG</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">Our Workforce <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Nepal</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Types of Workforce</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">News & Blogs <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">Current Opening <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="career.html">Open Positions</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="#">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="contact.html">For Company / Partners / Employer</a></li>
+                        <li><a href="contact.html">For Candidates</a></li>
+                    </ul>
+                </li>
+               
+
+            </ul>
+        </div>
+        <div class="overlay"></div>
+        <!-- Mobile Sidebar Menu end-->
     </div>
     <section class="country-details">
         <div class="container">
@@ -429,6 +517,60 @@
             const totalHeight = topNav.offsetHeight + midNav.offsetHeight;
             mainNav.style.top = totalHeight + 'px';
         });
+    </script>
+     <script>
+        const toggler = document.querySelector('.navbar-toggler');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const overlay = document.querySelector('.overlay');
+        const closeBtn = document.querySelector('.close-btn');
+
+        // Open Sidebar
+        toggler.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+        });
+
+        // Close Sidebar
+        const closeMenu = () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+
+            // Close all dropdowns when sidebar closes
+            document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('open');
+                dropdown.querySelector('.mobile-submenu').style.maxHeight = '0';
+            });
+        };
+
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Dropdown Toggle (Fixed)
+        document.querySelectorAll('.mobile-dropdown > a').forEach(dropdownToggle => {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = dropdownToggle.parentElement;
+                const submenu = parent.querySelector('.mobile-submenu');
+
+                // Close other dropdowns first
+                document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                    if (dropdown !== parent) {
+                        dropdown.classList.remove('open');
+                        dropdown.querySelector('.mobile-submenu').style.maxHeight = '0';
+                    }
+                });
+
+                // Toggle current dropdown
+                if (parent.classList.contains('open')) {
+                    parent.classList.remove('open');
+                    submenu.style.maxHeight = '0';
+                } else {
+                    parent.classList.add('open');
+                    submenu.style.maxHeight = submenu.scrollHeight + "px"; // Auto height based on content
+                }
+            });
+        });
+
     </script>
 
     <script>
