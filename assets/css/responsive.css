@@ -1,0 +1,339 @@
+@media only screen and (max-width: 2000px) and (min-width: 1901px) {
+    .news-row {
+        width: 75% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1651px) {
+    .news-row {
+        width: 85% !important;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 750px) and (min-width: 350px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .top-nav,
+    .lcn,
+    .location,
+    .wtp {
+        display: none;
+    }
+
+    .year-box {
+        width: 28%;
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .year-box h2 {
+        font-size: 26px;
+    }
+
+    .year-box h3 {
+        font-size: 10px;
+    }
+
+    .news-col {
+        margin-right: 13px;
+    }
+
+    .social-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .wtp-btn {
+        margin-top: 20px;
+        padding: 8px 35px;
+    }
+
+    .wtp-btn span {
+        font-size: 13px
+    }
+
+    .input-form a {
+        text-decoration: none;
+        background-color: #f68b1e;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .find-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .find-con h2 {
+        font-size: 30.3px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .require-icon {
+        width: 13px;
+        margin-left: 10px;
+    }
+
+    .reuire-btn {
+        border: 1px solid white;
+        color: white;
+        padding: 11px 0px 11px 12px;
+        font-size: 17.3px;
+        position: relative;
+    }
+
+    .insight-card {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 25px;
+        width: 291px;
+    }
+
+    .insights {
+        padding: 16px;
+        position: relative;
+    }
+
+    .date-div {
+        top: 25%;
+    }
+
+    .insight-card h3 {
+        font-size: 13px;
+        color: #1752ac;
+        margin-top: 20px;
+    }
+
+    p.wow.animate__.animate__fadeInUp {
+        font-size: 11px;
+    }
+
+    .insight-row {
+        position: relative;
+        gap: 18px;
+    }
+
+    .client-con h2 {
+        font-size: 28.5px;
+        color: #020369;
+        font-weight: 800;
+    }
+
+    .col-md-6.client-logo {
+        margin-top: 25px;
+    }
+
+    .learn-btn {
+        background-color: #f7951e;
+        border-color: #f7951e;
+        padding: 11px 25px 11px 25px;
+    }
+
+    .comments p {
+        font-size: 11px;
+    }
+
+    .profile h4 {
+        font-size: 15px;
+    }
+
+    .member-card {
+        border: 1px solid black;
+        padding: 12px;
+    }
+
+    .star {
+        margin-top: 3px;
+        margin-bottom: 6px;
+        gap: 3px;
+    }
+
+    .test-con2 h2 {
+        color: #020369;
+        font-size: 39.9px;
+        font-weight: 600;
+    }
+
+    .process {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .col-md-6.test-con1 {
+        text-align: center;
+    }
+
+    .test-text {
+        margin-top: 20px;
+    }
+
+    .col-md-6.test-con2.text-center {
+        margin-top: 30px;
+    }
+
+    .skill-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .agency-ftr-con {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    a.btn.btn-primary.learn-btn {
+        margin-bottom: 22px;
+    }
+
+    .agency h2 {
+        font-size: 21.7px;
+        color: #020369;
+        font-weight: 600;
+    }
+
+    .agency-img-con h2 {
+        color: white;
+    }
+
+    .agency-img-con {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .man-power-form .row-cols-2>* {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .man-power h2 {
+        font-size: 21.8px;
+        color: #020369;
+        font-weight: 600;
+    }
+
+    .sector h2 {
+        color: #020369;
+        font-size: 20.3px;
+        font-weight: 600;
+    }
+
+    .sector h5 {
+        color: #1752ac;
+        font-size: 12.3px;
+    }
+
+    .owl-dots {
+        display: none;
+    }
+
+    .partner-box {
+        width: 38%;
+        top: -81px;
+        right: 0;
+        left: 60%;
+    }
+
+    .partner-box h2 {
+        color: white;
+    }
+
+    .partner-box h3 {
+        color: white;
+        font-size: 13.8px;
+    }
+
+    .partner-con-img {
+        margin-bottom: 20px;
+    }
+
+    .partner-con-img.wow.animate__.animate__fadeInUp.animated {
+        height: 319px !important;
+        margin-bottom: 90px;
+    }
+
+    .country-box {
+        width: 38%;
+        top: 60%;
+        left: -5%;
+    }
+    .round{
+        width: 30%;
+    }
+    .cus{
+        width: 100%;
+    }
+    .contact h2 {
+        font-size: 29.3px;
+    }
+    .social-card {
+        margin-bottom: 20px;
+    }
+    .con-social-div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .apply-btn{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .career-card{
+        margin-bottom: 10px;
+    }
+    .blog h2 {
+        color: #020369;
+        font-size: 24.3px;
+        font-weight: 600;
+    }
+    .blog-con h3 {
+        font-size: 11px;
+        color: #1752ac;
+    }
+    .blog-details h2 {
+        color: #020369;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .blog-details p{
+        font-size: 10px;
+    }
+    .blog-details ul{
+        font-size: 10px;
+    }
+    .blog-details h6{
+        font-size: 11px;
+    }
+    .license h2 {
+        color: #020369;
+        font-size: 31.3px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
